@@ -53,21 +53,29 @@ Run all Nodes in Jupyter Notebook.
 Analysis completed for the machine learning models used in this Challenge. This might include:
 
 * purpose of the analysis: 
-Demonstrate various techniques to train and evaluate a model based on loan risk.
 
+Identify credit worthiness of borrower by using a most appropriate mchine learning model for peer-to-peer lending services company. Use historical lending activity to train model. 
 
-* Explain what financial information the data was on, and what you needed to predict.
-* Provide basic information about the variables you were trying to predict (e.g., `value_counts`).
-* Describe the stages of the machine learning process you went through as part of this analysis.
-* Briefly touch on any methods you used (e.g., `LogisticRegression`, or any resampling method).
+For this use case, imbalanced-learn library, a logistic regression model is used to compare two versions of the dataset. First, use the original dataset. Second, resample the data by using the RandomOverSampler module from the imbalanced-learn library.
+
+For both cases, get the count of the target classes, train a logistic regression classifier, calculate the balanced accuracy score, generate a confusion matrix, and generate a classification report.
+The purpose of this study is to compare the weather condiitions across the globe for random 600+ cities. 
 
 ## Results
 
-Using bulleted lists, describe the balanced accuracy scores and the precision and recall scores of all machine learning models.
+The balanced accuracy scores and the precision and recall scores of all machine learning models as below that were observed as part of the analysis.
 
-* Machine Learning Model 1:
-  * Description of Model 1 Accuracy, Precision, and Recall scores.
+* Machine Learning Model 1: Logistics Regression model
+  * The Logistics Regression model performs well according to the balanced accuracy score (99%), however this is due to the data being imbalanced. The number of healthy loans (low-risk) highly outweighs the number of non-healthy (high-risk) loans indicating that the model would predict loan status's as healthy better than being able to predict loan status's as non-healthy.
 
+                precision    recall  f1-score   support
+
+           0       **1.00**      **0.99**      1.00     18765
+           1       **0.84**      **0.94**      0.89       619
+
+    accuracy                           **0.99**     19384
+   macro avg       0.92      0.97      0.94     19384
+weighted avg       0.99      0.99      0.99     19384
 
 
 * Machine Learning Model 2:
