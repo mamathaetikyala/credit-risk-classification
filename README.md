@@ -52,7 +52,7 @@ Run all Nodes in Jupyter Notebook.
 
 Analysis completed for the machine learning models used in this Challenge. This might include:
 
-* purpose of the analysis: 
+## Purpose of the analysis: 
 
 Identify credit worthiness of borrower by using a most appropriate mchine learning model for peer-to-peer lending services company. Use historical lending activity to train model. 
 
