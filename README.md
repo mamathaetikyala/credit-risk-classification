@@ -80,6 +80,15 @@ weighted avg       0.99      0.99      0.99     19384
 
 * Machine Learning Model 2: the logistic regression model, fit with oversampled data
   * the logistic regression model, fit with oversampled data oversampled model generated same accuracy score of 99% Since original data was imblanced there is no significant improvement observed in overall accuracy. But 99% is very good accuracy score.The oversampled model performs better because it does a exceptional job in catching mistakes such as labeling non-healthy (high-risk) loans as healthy (low-risk). This is analyzed based off of the recall score increasing from the imbalanced model to the oversampled model 0.94 --> 0.99. Precision is same as befire oversampled i.e.0.84. But over all scores improved with this model.
+ 
+                  precision    recall  f1-score   support
+
+           0       1.00      0.99      1.00     18765
+           1       0.84      0.99      0.91       619
+
+    accuracy                           0.99     19384
+   macro avg       0.92      0.99      0.95     19384
+weighted avg       0.99      0.99      0.99     19384
 
 ## Summary
 
