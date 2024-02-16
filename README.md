@@ -50,7 +50,7 @@ Run all Nodes in Jupyter Notebook.
 
 ## Overview of the Analysis
 
-Analysis completed for the machine learning models used in this Challenge. This might include:
+Perform analysis on the right machine learning model to be used by peer-to-peer lending services company to check credit worthyness of borrower by loan risk.
 
 ## Purpose of the analysis: 
 
